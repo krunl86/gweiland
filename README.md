@@ -32,3 +32,7 @@ To Perform this action user has to tap on notification icon
 To Perform this action user hase to tap on setting icon
 
 - As Again due time constraint and design unavaibility have added this feature on setting button😬
+
+# Video Link Of App Recording
+
+https://drive.google.com/file/d/1yiq7TQHVF45oiGTUvcWfnS_e9fdEly-O/view?usp=sharing
