@@ -13,12 +13,14 @@ class GweilandApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // lisning theme provider change to update UI
     final theme = ref.watch(themeProvider);
+    // lisning  localization provider to update UI
     final locale = ref.watch(localizationProvider);
-
+    // screen util is used to manage consistant spacing and marging padding using diamentions
     return ScreenUtilInit(
-      // designSize: ,
       builder: (context, child) => AppRouter(
+          // material router to manage navigations in app
           builder: (context, router) => MaterialApp.router(
                 title: 'Agrovikas',
                 localizationsDelegates: AppLocalizations.localizationsDelegates,
