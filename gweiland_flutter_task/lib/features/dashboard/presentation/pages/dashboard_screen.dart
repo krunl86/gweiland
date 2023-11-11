@@ -44,7 +44,6 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
       appBar: AppBar(
         surfaceTintColor: Colors.transparent,
         titleSpacing: 24,
-        //backgroundColor: Colors.white,
         title: Text(
           context.l10n.exchange,
           style: theme.textTheme.headlineMedium!.copyWith(fontSize: 20.sp),
