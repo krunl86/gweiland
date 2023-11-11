@@ -9,6 +9,7 @@ In this perticular Interview task I have done Functionality like
 - Fetching Crypto List from Open API
 - Filtering Crypto List based on Price and Value Change in 24 hr.
 - List if sorted by Market cap
+- On Tap on Crypto List update Card
 
 # Additional Feature
 

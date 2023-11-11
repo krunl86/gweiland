@@ -11,6 +11,7 @@ import 'package:gweiland_flutter_task/common/provider/localization_service.dart'
 import 'package:gweiland_flutter_task/common/provider/theme_service.dart';
 import 'package:gweiland_flutter_task/features/dashboard/presentation/widgets/crypto_list_item.dart';
 import 'package:gweiland_localization/gweiland_localization.dart';
+import 'package:gweiland_network/gweiland_network.dart';
 import '../provider/dashboard_controller_provider.dart';
 import '../widgets/widgets.dart';
 
@@ -119,18 +120,28 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
 
               // listview containg crypto list
               Expanded(
-                  child: ListView.builder(
-                itemCount: ref.read(dashboardControllerProvider).cryptoListModel?.data?.length ?? 0,
-                itemBuilder: (context, index) {
-                  var cryptoItem =
-                      ref.read(dashboardControllerProvider).cryptoListModel!.data![index];
+                  child: ref.read(dashboardControllerProvider).networkstate == Loading
+                      ? Center(
+                          //width: 55,
+                          //height: 55,
+                          child: CircularProgressIndicator(
+                            color: theme.primaryColor,
+                          ),
+                        )
+                      : ListView.builder(
+                          itemCount:
+                              ref.read(dashboardControllerProvider).cryptoListModel?.data?.length ??
+                                  0,
+                          itemBuilder: (context, index) {
+                            var cryptoItem =
+                                ref.read(dashboardControllerProvider).cryptoListModel!.data![index];
 
-                  // returning single list item as crypto list
-                  return CryptoListItem(
-                    cryptoItem: cryptoItem,
-                  );
-                },
-              )),
+                            // returning single list item as crypto list
+                            return CryptoListItem(
+                              cryptoItem: cryptoItem,
+                            );
+                          },
+                        )),
 
               // spacer
               const Space.h(Dimensions.small),
