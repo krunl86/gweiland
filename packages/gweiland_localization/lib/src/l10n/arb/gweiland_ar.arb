@@ -1,0 +1,19 @@
+{
+  "app_title": "Gweiland",
+
+  "@SECTION": {
+  },
+  "tittle": "Gweiland",
+  "cryptoCurrency": "عملة مشفرة",
+  "topCrypto": "أعلى العملات المشفرة",
+  "viewAll": "عرض الكل",
+  "filter": "منقي",
+  "ecom": "إيكوم",
+  "exchange": "تبادل",
+  "launchPad": "منصة الإطلاق",
+  "wallet": "محفظة",
+ 
+
+  "@END_OF_FILE" : {}
+
+}

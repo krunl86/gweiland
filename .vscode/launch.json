@@ -1,0 +1,108 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gweiland_flutter_task",
+            "cwd": "gweiland_flutter_task",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "gweiland_flutter_task (profile mode)",
+            "cwd": "gweiland_flutter_task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "gweiland_flutter_task (release mode)",
+            "cwd": "gweiland_flutter_task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "gweiland_assets",
+            "cwd": "packages/gweiland_assets",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "gweiland_assets (profile mode)",
+            "cwd": "packages/gweiland_assets",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "gweiland_assets (release mode)",
+            "cwd": "packages/gweiland_assets",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "gweiland_common",
+            "cwd": "packages/gweiland_common",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "gweiland_common (profile mode)",
+            "cwd": "packages/gweiland_common",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "gweiland_common (release mode)",
+            "cwd": "packages/gweiland_common",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "gweiland_localization",
+            "cwd": "packages/gweiland_localization",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "gweiland_localization (profile mode)",
+            "cwd": "packages/gweiland_localization",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "gweiland_localization (release mode)",
+            "cwd": "packages/gweiland_localization",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "gweiland_network",
+            "cwd": "packages/gweiland_network",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "gweiland_network (profile mode)",
+            "cwd": "packages/gweiland_network",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "gweiland_network (release mode)",
+            "cwd": "packages/gweiland_network",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

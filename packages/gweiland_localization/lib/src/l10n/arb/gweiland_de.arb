@@ -1,0 +1,20 @@
+{
+  "app_title": "Gweiland",
+
+  "@SECTION": {
+  },
+ "tittle": "Gweiland",
+  "cryptoCurrency": "Kryptowährung",
+  "topCrypto": "Top-Kryptowährung",
+  "viewAll": "Alle ansehen",
+  "filter": "Filter",
+  "ecom": "Ecom",
+  "exchange": "Austausch",
+  "launchPad": "LaunchPad",
+  "wallet": "Geldbörse",
+ 
+
+
+  "@END_OF_FILE" : {}
+
+}

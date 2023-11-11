@@ -1,0 +1,19 @@
+{
+  "app_title": "Gweiland",
+
+  "@SECTION": {
+  },
+  "tittle": "Gweiland",
+  "cryptoCurrency": "cryptoCurrency",
+  "topCrypto": "Top Cryptocurrency",
+  "viewAll": "View All",
+  "filter": "Filter",
+  "ecom": "Ecom",
+  "exchange": "Exchange",
+  "launchPad": "launchPad",
+  "wallet": "wallet",
+ 
+
+  "@END_OF_FILE" : {}
+
+}

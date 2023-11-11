@@ -1,0 +1,19 @@
+{
+  "app_title": "Gweiland",
+
+  "@SECTION": {
+  },
+  "tittle": "Gweiland",
+  "cryptoCurrency": "क्रिप्टो करेंसी",
+  "topCrypto": "शीर्ष क्रिप्टोकरेंसी",
+  "viewAll": "सभी को देखें",
+  "filter": "फ़िल्टर",
+  "ecom": "ई-कॉमर्स",
+  "exchange": "अदला-बदली",
+  "launchPad": "लांच पैड",
+  "wallet": "बटुआ",
+ 
+
+  "@END_OF_FILE" : {}
+
+}
