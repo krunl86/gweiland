@@ -49,6 +49,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
           style: theme.textTheme.headlineMedium!.copyWith(fontSize: 20.sp),
         ),
         actions: [
+          // actionbar notification button with badge widget to show new notification
           Badge(
               backgroundColor: theme.gweilandColors.yellow,
               alignment: Alignment.topRight,
@@ -63,6 +64,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                     child: GweilandAssets.icons.notificationBell.svg(height: 20, width: 20)),
               )),
           const Space.w(Dimensions.small),
+
+          // actionbar setting button to toggle theme.
           GestureDetector(
               onTap: () => ref.read(themeProvider.notifier).toggleTheme(),
               child: GweilandAssets.icons.settings.svg(height: 20, width: 20)),
@@ -75,13 +78,17 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
           vertical: Dimensions.smaller,
         ),
         child: Container(
-          // color: Colors.white,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
+              // showing language selection widgets
               if (showLocal) ...[const LanguageSelector()],
+
+              // spacer
               const Space.h(DimensionToken.small),
+
+              // search bar and filter buttons
               Row(
                 children: [
                   const Expanded(child: SearchBarField()),
@@ -89,13 +96,28 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                   FilterButton(),
                 ],
               ),
+              //spacer
               const Space.h(DimensionToken.small),
+
+              // title Row
               TitleRow(theme: theme),
+
+              //spacer
               const Space.h(DimensionToken.small),
+
+              // Crypto card widget
               CryptoCard(),
+
+              //spacer
               const Space.h(Dimensions.small),
+
+              //view all list Section
               const ViewAllSection(),
+
+              //spacer
               const Space.h(Dimensions.small),
+
+              // listview containg crypto list
               Expanded(
                   child: ListView.builder(
                 itemCount: ref.read(dashboardControllerProvider).cryptoListModel?.data?.length ?? 0,
@@ -103,12 +125,17 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                   var cryptoItem =
                       ref.read(dashboardControllerProvider).cryptoListModel!.data![index];
 
+                  // returning single list item as crypto list
                   return CryptoListItem(
                     cryptoItem: cryptoItem,
                   );
                 },
               )),
+
+              // spacer
               const Space.h(Dimensions.small),
+
+              // bottomBar
               const CustomBottomBar(),
               //const Space.h(Dimensions.medium)
             ],
@@ -134,7 +161,7 @@ class LanguageSelector extends ConsumerWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           GestureDetector(
-            onTap: () => ref.read(localizationProvider).changeDirection(Locale('en')),
+            onTap: () => ref.read(localizationProvider).changeDirection(const Locale('en')),
             child: const LanguageSelectorItem(
               icon: Icons.language,
               label: 'English',
@@ -142,7 +169,7 @@ class LanguageSelector extends ConsumerWidget {
           ),
           const Space.w(Dimensions.smaller),
           GestureDetector(
-            onTap: () => ref.read(localizationProvider).changeDirection(Locale('ar')),
+            onTap: () => ref.read(localizationProvider).changeDirection(const Locale('ar')),
             child: const LanguageSelectorItem(
               icon: Icons.language,
               label: 'Arabic',
@@ -150,7 +177,7 @@ class LanguageSelector extends ConsumerWidget {
           ),
           const Space.w(Dimensions.smaller),
           GestureDetector(
-            onTap: () => ref.read(localizationProvider).changeDirection(Locale('de')),
+            onTap: () => ref.read(localizationProvider).changeDirection(const Locale('de')),
             child: const LanguageSelectorItem(
               icon: Icons.language,
               label: 'German',
@@ -158,7 +185,7 @@ class LanguageSelector extends ConsumerWidget {
           ),
           const Space.w(Dimensions.smaller),
           GestureDetector(
-            onTap: () => ref.read(localizationProvider).changeDirection(Locale('hi')),
+            onTap: () => ref.read(localizationProvider).changeDirection(const Locale('hi')),
             child: const LanguageSelectorItem(
               icon: Icons.language,
               label: 'Hindi',

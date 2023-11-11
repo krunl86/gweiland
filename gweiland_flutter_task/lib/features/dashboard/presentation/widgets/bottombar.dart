@@ -36,6 +36,8 @@ class CustomBottomBar extends StatelessWidget {
               .image(width: 20, height: 20, color: theme.gweilandColors.white.withOpacity(1)),
           title: context.l10n.exchange,
         ),
+
+        // central yellow globe with constant rotating animation
         InfiniteAnimation(
           durationInSeconds: 111,
           child: Container(
@@ -55,6 +57,8 @@ class CustomBottomBar extends StatelessWidget {
               ),
               child: GweilandAssets.images.globe.image()),
         ),
+
+        // launch pad widget
         navItem(
           icon: GweilandAssets.images.launchPad.image(
             width: 20,
@@ -62,6 +66,8 @@ class CustomBottomBar extends StatelessWidget {
           ),
           title: context.l10n.launchPad,
         ),
+
+        // wallet widget
         navItem(
           icon: GweilandAssets.images.wallet.image(width: 20, height: 20),
           title: context.l10n.wallet,

@@ -13,6 +13,7 @@ final driverdataSourceProvider = Provider.family<CryptoListRemoteDataSource, Net
   (_, networkService) => CryptoListRemoteDataSource(networkService),
 );
 
+// dashboard controller provider is used to manage and access dashbard controller for various acctions
 final dashboardControllerProvider = StateNotifierProvider<DashBoardController, DashboardState>(
   (ref) {
     final CryptoRepository authenticationRepository = ref.watch(cryptoRepositoryImplProvider);
