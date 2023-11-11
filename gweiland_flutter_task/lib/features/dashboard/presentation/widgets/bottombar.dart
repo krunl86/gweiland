@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gweiland_assets/gweiland_assets.dart';
 import 'package:gweiland_common/gweiland_common.dart';
+import 'package:gweiland_flutter_task/common/provider/theme_service.dart';
 import 'package:gweiland_localization/gweiland_localization.dart';
 
 import 'rotating_globe_widget.dart';
@@ -21,7 +22,7 @@ class CustomBottomBar extends StatelessWidget {
         vertical: Dimensions.smaller,
       ),
       decoration: BoxDecoration(
-          color: theme.gweilandColors.black,
+          color: /* context.isDarkMode ? theme.gweilandColors.white : */ theme.gweilandColors.black,
           borderRadius: BorderRadius.all(Radius.circular(
             Dimensions.of(context).radii.largest + 10,
           ))),
