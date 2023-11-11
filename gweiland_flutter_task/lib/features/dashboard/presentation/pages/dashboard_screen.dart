@@ -26,7 +26,7 @@ class DashboardScreen extends ConsumerStatefulWidget {
 }
 
 class _DashboardScreenState extends ConsumerState<DashboardScreen> {
-  bool showLocal = true;
+  bool showLocal = false;
 
   @override
   void initState() {
