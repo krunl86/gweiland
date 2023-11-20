@@ -28,7 +28,7 @@ jobs:
         run: cd gweiland
         run: cd gweiland_flutter_task
         
-        run: dart pub get
+        #run: dart pub get
 
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
