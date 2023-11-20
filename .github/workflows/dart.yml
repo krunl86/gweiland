@@ -24,10 +24,11 @@ jobs:
          distribution: 'zulu' # See 'Supported distributions' for available options
          java-version: '8'
      - name: Flutter action
-       uses: subosito/flutter-action@v2.12.0
+     - uses: actions/checkout@v3
+     - uses: subosito/flutter-action@v2
        with:
-         flutter-version: "3.16.0"
-         channel : stable
+        channel: 'stable' # or: 'beta', 'dev' or 'master'
+     - run: flutter --version
      - run: flutter pub get
      - run: flutter test
      - run: flutter build apk
